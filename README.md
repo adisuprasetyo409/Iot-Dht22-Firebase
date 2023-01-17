@@ -1,1 +1,1 @@
-file ESP32 adalah file arduino IDE menggunakan mikrokontroner ESP32
+esp32.ino adalah file Arduino
