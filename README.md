@@ -1,2 +1,1 @@
-# Iot-Dht22-Firebase
- cara menggukan wokwi dengan firebase
+file ESP32 adalah file arduino IDE menggunakan mikrokontroner ESP32
