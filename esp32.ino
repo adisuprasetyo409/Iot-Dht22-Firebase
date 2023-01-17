@@ -88,7 +88,7 @@ void pompa(){
        sendDataToFirebasee(on);
         digitalWrite(relay, HIGH);
         delay(10);
-        Serial.println("POMPA ON");
+        Serial.println("LED ON");
     }
     if (val=="2")                                   
     {         
@@ -96,7 +96,7 @@ void pompa(){
       //manual tutup pint                             
       digitalWrite(relay, LOW);
       delay(10);
-      Serial.println("POMPA OFF");
+      Serial.println("LED OFF");
       sendDataToFirebaseee(4);
       return;
     }
@@ -117,13 +117,13 @@ void pompa(){
         
           if (h <= 30){
             digitalWrite(relay, HIGH);
-            Serial.println("POMPA MENYALA");
+            Serial.println("LED ON");
             sendDataToFirebasee(on);
             return;
           }
           else{
             digitalWrite(relay, LOW);
-            Serial.println("POMPA MATI");
+            Serial.println("LED OFF");
             sendDataToFirebasee(off);
             return;
           }
