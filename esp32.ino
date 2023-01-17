@@ -63,23 +63,23 @@ void loop() {
 }
 
 void sendDataToFirebase(int value) {
-  Firebase.setInt(firebaseData,"/hasil/Kelembapan", value); // kirim data ke path "/sensor/value" di Firebase
+  Firebase.setInt(firebaseData,"/Hasil/Kelembapan", value); // kirim data ke path "/sensor/value" di Firebase
 }
 void sendDataTemperature(int value) {
-  Firebase.setInt(firebaseData,"/hasil/Temperature", value); // kirim data ke path "/sensor/value" di Firebase
+  Firebase.setInt(firebaseData,"/Hasil/Temperature", value); // kirim data ke path "/sensor/value" di Firebase
 }
 void sendDataToFirebasee(String value) {
-  Firebase.setString(firebaseData,"/hasil/Staus", value); // kirim data ke path "/sensor/value" di Firebase
+  Firebase.setString(firebaseData,"/Hasil/Status", value); // kirim data ke path "/sensor/value" di Firebase
 }
 void sendDataToFirebaseee(int value) {
-  Firebase.setString(firebaseData,"/hasil/Button", value); // kirim data ke path "/sensor/value" di Firebase
+  Firebase.setString(firebaseData,"/Hasil/Button", value); // kirim data ke path "/sensor/value" di Firebase
 }
 
 String val ;
 void pompa(){
     String on = "ON";
     String off = "OFF";
-  if (Firebase.getString(firebaseData, "hasil/Button")) {                           
+  if (Firebase.getString(firebaseData, "Hasil/Button")) {                           
     Serial.println(firebaseData.dataType());
       val = firebaseData.stringData();
       Serial.println(val);
